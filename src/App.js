@@ -14,9 +14,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/services/developpement" element={<Developement />} />
-        <Route path="/services/marketing" element={<Marketing />} />
+        <Route path="/services" element={<Services />} >
+          <Route path="/services/developpement" element={<Developement />} />
+          <Route path="/services/marketing" element={<Marketing />} />
+        </Route>
         <Route path="/profil/:id" element={<Profile />} />
 
       </Routes>

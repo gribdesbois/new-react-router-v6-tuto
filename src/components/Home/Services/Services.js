@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 export default function Services() {
   return (
@@ -9,6 +9,7 @@ export default function Services() {
         <Link to="/services/developpement">Services de developpement</Link>
         <Link to="/services/marketing">Services de marketing</Link>
       </nav>
+      <Outlet />
     </div>
   )
 }
